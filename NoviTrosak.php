@@ -17,7 +17,10 @@
             crossorigin="anonymous"></script>
 </head>
 <style>
-
+    .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
 </style>
 <body>
 <div class="container-fluid">
@@ -35,20 +38,18 @@
             </div>
         </div>
         <div class="col-8 align-items-center" style="border: 1px solid red;">
+            <div class="title text-center mt-5 pt-2 pb-2" style="border:1px solid red; font-size:25px;">
+                Izradi novi trošak
+            </div>
             <form action="">
-                <table class="mx-auto col-12 text-center">
-                    <tr>
-                        <td style="color:#c2bcbc" class="col-2">
-                            Ime troška
-                        </td>
-                        <td class="col-10">
-                            <input style="width: 100%; border:0;" type="text" class="pl-2 pt-3 pb-3" placeholder="Ime troška">
-                        </td>
-                    </tr>
-                </table>
+                <div class="col-12 nopadding">
+                    <div style="border:1px solid #c2bcbc; width: 100%;" class="pb-2 pt-2 no-gutters col-12 text-center mt-3"  contenteditable="true">Ime troška</div>
+                    <input type="text" placeholder="Iznos" style="border:1px solid #c2bcbc; width: 100%; float:right;" class="pb-2 pt-2 no-gutters col-9 mt-4">
+                    <input type="text" placeholder="Kategorija" style="border:1px solid #c2bcbc; width: 100%; float:right;" class="pb-2 pt-2 no-gutters col-9 mt-4">
+                    <input type="text" placeholder="Datum plaćanja" style="border:1px solid #c2bcbc; width: 100%; float:right;" class="pb-2 pt-2 no-gutters col-9 mt-4">
+                </div>
             </form>
         </div>
-        <div class="col-2 d-flex align-items-stretch" style="border: 1px solid red;">Div ljevo</div>
     </div>
 </div>
 </body>
